@@ -15,9 +15,9 @@
     * `sendClear()`: ゲームがクリアされたことを送信
     * `sendScore()`: ゲームのスコアを送信
 4. 対象のAkashicコンテンツ側でGTMタグを埋め込む
-  * 対象のAkashicコンテンツに新規ディレクトリ(例:innerhtml)を切って、そのディレクトリ下にGTMタグが書かれたhtmlファイル(例：gtm.html)を置く
-  * 上記で作成したhtmlファイルを取り込んだhtmlをexportする
-    * `akashic export html --output game --inject innerhtml/gtm.html`
+    * 対象のAkashicコンテンツに新規ディレクトリ(例:innerhtml)を切って、そのディレクトリ下にGTMタグが書かれたhtmlファイル(例：gtm.html)を置く
+    * 上記で作成したhtmlファイルを取り込んだhtmlをexportする
+      * `akashic export html --output game --inject innerhtml/gtm.html`
 
 ## ビルド方法
 

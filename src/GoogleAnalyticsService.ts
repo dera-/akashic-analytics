@@ -24,10 +24,10 @@ export abstract class GoogleAnalyticsService {
 	private _gameTitle: string;
 	private _firstClickTime: number;
 	private _lastClickTime: number;
-	private _configs: Object[];
+	private _configs: any[];
 	private _currentNumber: number;
 
-	constructor(gameTitle: string, configs: Object[] = []) {
+	constructor(gameTitle: string, configs: any[] = []) {
 		this._gameTitle = gameTitle;
 		this._firstClickTime = undefined;
 		this._lastClickTime = undefined;
@@ -43,7 +43,11 @@ export abstract class GoogleAnalyticsService {
 		this.send("load");
 	}
 
-	get parameter(): Object {
+	get currentNumber(): number {
+		return this._currentNumber;
+	}
+
+	getParameter(): any {
 		if (this._currentNumber === -1) {
 			return {};
 		}
