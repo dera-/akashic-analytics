@@ -1,5 +1,5 @@
 {
-  "name": "akashic-analytics",
+  "name": "@dera-/akashic-analytics",
   "version": "1.0.0",
   "description": "GAにコンテンツ利用状況のデータを送るためのライブラリ",
   "main": "lib/index.js",
